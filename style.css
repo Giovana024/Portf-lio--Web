@@ -10,3 +10,17 @@ body{
     color:#fff;
 text-align: center;
 }
+nav{
+    background-color: #00FFFF;
+    padding: 10px;
+    position:fixed;
+    width: 90%;
+    top:0;
+}
+nav ul{
+    list-style: circle;
+}
+nav ul li{
+display: inline;
+margin:20px;
+}
