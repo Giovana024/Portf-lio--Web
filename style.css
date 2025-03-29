@@ -12,15 +12,21 @@ text-align: center;
 }
 nav{
     background-color: #00FFFF;
-    padding: 10px;
+    padding: 15 0px;
     position:fixed;
     width: 90%;
     top:0;
 }
 nav ul{
-    list-style: circle;
+    list-style:none;
 }
 nav ul li{
 display: inline;
-margin:20px;
+margin: 0 15px;
+}
+nav ul li a{
+    text-decoration: none
+color: #D4AF37;
+font-weight: bold;
+transition: color 0.5s;
 }
