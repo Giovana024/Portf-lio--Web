@@ -120,7 +120,6 @@ margin: 0 auto;
 
 .projetos-card {
 background: rgba(255, 255, 255, 0.05)
-border-radius : 16px;
 backdrop-filter: blur(5px)
 border: 1px solid var(--vidro);
 overflow: hidden;
