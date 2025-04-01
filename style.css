@@ -8,40 +8,8 @@ body{
     background-color: crimson;
     height: 100vh;
 }
-nav{
-    background-color: #00FFFF;
-    padding: 15 0px;
-    position:fixed;
-    width: 90%;
-    top:0;
-}
-nav ul{
-    list-style:none;
-}
-nav ul li{
-display: inline;
-margin: 0 15px;
-}
-<<<<<<< HEAD
-nav ul li a{
-    text-decoration: none;
-color: aqua;
-font-weight: bold;
-transition:color 0.5s;
-}
-nav ul li a:hover{
-    color: blue;
-}
-=======
-nav ul li a{
-    text-decoration: none
-color: #D4AF37;
-font-weight: bold;
-transition: color 0.5s;
-}
-nav ul li a:hover {
-    color: #fff;
-}
-.home {
-padding: 100px 20px 50px;
+    
+.interface{
+  max-width: 1280px;  
+  margin: 0 auto;
 }
