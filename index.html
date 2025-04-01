@@ -52,12 +52,25 @@
     <h2 class="contatos-titulo">Contatos</h2>
     <form class="formulario-contato" id="formulario">
         <div class="grupo-form">
-            <input placeholder="Nome" class="campo-form">
+            <input placeholder="Nome" class="campo-form" id="nome">
         </div>
         <div>
-            <textarea class="text-form" placeholder="Digite sua mensagem"></textarea>
+            <textarea class="text-form" placeholder="Digite sua mensagem" rows="5" id="mensagem"></textarea>
         </div>
 
         <button type="submit" class="botao-form">Enviar Whatsapp</button>
     </form>
 </section>
+
+<script>
+const nome= document.getElementById('nome');
+const mensagem= document.getElementById('mensagem');
+const telefone= '5571988204439'
+
+const texto= `Olá! me chamo ${Giovana}, ${mensagem}`
+const msgFormatada= encodeURIComponent (texto)
+
+const url = `
+</script>
+</body>
+</html>
