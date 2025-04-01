@@ -123,12 +123,19 @@ background: rgba(255, 255, 255, 0.05)
 backdrop-filter: blur(5px)
 border: 1px solid var(--vidro);
 overflow: hidden;
-
+transition: all 0.5px;
+cursor: pointer;
 }
 
 .projetos-titulo {
 text-align: center;
-font-size: 2rem;
+font-size: 2.5rem;
+margin-bottom: 50px;
+}
+
+.projetos-card:hover{
+box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+transform: translateY(-10px) scale(1.03);
 }
 
 .projetos-imagem {
@@ -137,6 +144,35 @@ width: 100px;
 object-fit: cover;
 }
 
+.paragrafo-projetos {
+  color: rg2ba(226, 232, 240, 0.8);
+  line-height: 1.25rem;
+}
+
 .info-projetos {
+margin-bottom: 5px;
+}
+
+.contatos {
+padding: 6rem 2rem;
+}
+
+.contatos-titulo {
+text-align: center;
+font-size: 2.5rem;
+margin-bottom: 50px;
+}
+
+.formulario-contato {
+max-width: 600px;
+margin: 0 auto;
+background:rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(5px);
+padding: 2rem;
+border: 1px solid var(--vidro);
+border-radius: 16px;
+}
+
+.nome-form {
 
 }
