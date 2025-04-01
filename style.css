@@ -26,6 +26,32 @@ body {
 .navegacao {
   position: fixed;
   background: rgba(15, 23, 42, 0.9);
-  width: 100;
+  width: 100%;
+z-index: 100;
+padding: 1.5rem;
+}
 
+.menu{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+gap: 3rem;
+}
+
+.menu-link{
+  text-decoration: none;
+  color: var(--claro);
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.menu-link::before{
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  backgroud: linear-gradient(90deg, var(--primaria), var(--secundaria));
 }
