@@ -2,14 +2,30 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-body{
-    background-color: crimson;
-    height: 100vh;
+html {
+  scroll-behavior: smooth;
 }
-    
-.interface{
-  max-width: 1280px;  
-  margin: 0 auto;
+
+:root {
+  --primaria: #4f46e5;
+  --secundaria: #7c3aed;
+  --escuro: #0f172a;
+  --maisescuro: #0a0f1c;
+  --claro: #e2e8f0;
+  --vidro: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: var(--escuro);
+  color: var(--claro);
+}
+
+.navegacao {
+  position: fixed;
+  background: rgba(15, 23, 42, 0.9);
+  width: 100;
+
 }
