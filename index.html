@@ -43,7 +43,6 @@
 <div class="projetos-card">
     <img src="" alt="Projeto 1" class="projetos-imagem">
     <h3 class="info-projetos">Lading Padding</h3>
-    <a href="content://com.android.chrome.DownloadFileProvider/external_volume?file=index%20(75).html"></a>
     <p class="paragrafo-projetos">Página de um evento com formulário</p>
 </div>
     </div>
@@ -51,7 +50,7 @@
 
 <section id="contatos" class="contatos">
     <h2 class="contatos-titulo">Contatos</h2>
-    <form class="formulario-contato" id="formulario">
+    <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
         <div class="grupo-form">
             <input placeholder="Nome" class="campo-form" id="nome">
         </div>
@@ -64,14 +63,18 @@
 </section>
 
 <script>
+fuction enviarWhats(event) {
+    event.preventDefault()
 const nome= document.getElementById('nome');
 const mensagem= document.getElementById('mensagem');
 const telefone= '5571988204439'
 
-const texto= `Olá! me chamo ${Giovana}, ${mensagem}`
+const texto= `Olá! Mee chamo ${Giovana}, ${Deixe a sua mensagem. Logo estarei retornando}`
 const msgFormatada= encodeURIComponent (texto)
 
-const url = `
+const url = `https://whatsa.me/${telefone}/?t=${msgFormatada}`
+
+window.open(url, '_blank')
 </script>
 </body>
 </html>
