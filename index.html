@@ -57,33 +57,7 @@
     <a href="https://www.linkedin.com/in/giovana-gusm%C3%A3o-740b6630a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">linkedin</a>
     <br>
     <a href="https://wa.me/qr/EC6BPIXX4W44L1">Enviar mensagem</a>
-    <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
-        <div class="grupo-form">
-            <input placeholder="Nome" class="campo-form" id="nome">
-        </div>
-        <div>
-            <textarea class="text-form" placeholder="Digite sua mensagem" rows="5" id="mensagem"></textarea>
-        </div>
-
-        <button type="submit" class="botao-form">Enviar Whatsapp</button>
-    </form>
+    <br>
 </section>
-
-<script>
-fuction enviarWhats(event) {
-    event.preventDefault()
-const nome= document.getElementById('nome').value;
-const mensagem= document.getElementById('mensagem').value;
-const telefone= '5571988204439'
-
-const texto= `Olá! Me chamo ${Giovana}, ${Deixe a sua mensagem. Logo estarei retornando}`
-const msgFormatada= encodeURIComponent (texto)
-
-const url = `https://wa.me/${telefone}?text=${msgFormatada}`
-
-    console.log(url)
-
-window.open(url, '_blank')
-</script>
 </body>
 </html>
