@@ -72,7 +72,9 @@ const telefone= '5571988204439'
 const texto= `Olá! Mee chamo ${Giovana}, ${Deixe a sua mensagem. Logo estarei retornando}`
 const msgFormatada= encodeURIComponent (texto)
 
-const url = `https://whatsa.me/${telefone}/?t=${msgFormatada}`
+const url = `https://wa.me/${telefone}?text=${msgFormatada}`
+
+    console.log(url)
 
 window.open(url, '_blank')
 </script>
